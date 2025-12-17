@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "template-mod",
+  "version": "1.0.0",
+  "name": "ExampleMod",
+  "main": "com.example.TemplateMod",
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.8",
+    "java": ">=17"
+  }
+}

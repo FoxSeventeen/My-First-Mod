@@ -2,6 +2,8 @@ package com.example;
 
 import net.fabricmc.api.ModInitializer;
 
+import com.example.fabricdocs.registry.ExampleModItems; // 导入类
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +20,8 @@ public class TemplateMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+        new ExampleModItems().onInitialize(); // 调用物品注册逻辑
+//        ModItems.initialize();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
